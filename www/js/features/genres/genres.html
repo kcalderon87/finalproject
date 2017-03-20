@@ -1,0 +1,21 @@
+<ion-view view-title="Select your MyWatchList">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+	<div class="tabs tabs-icon-top">
+	  <a class="tab-item">
+	    <i class="icon ion-home" ng-click="browse()"></i>
+	    Home
+	  </a>
+	  <a class="tab-item">
+	    <i class="icon ion-star" ></i>
+	    Favorites
+	  </a>
+	</div>
+
+</ion-view>
