@@ -1,0 +1,27 @@
+<ion-view view-title="Search Results">
+  <ion-content>
+
+	  <ion-list>
+
+	  <ion-item 
+	    
+	    collection-repeat="tvshow in ResultsVM.schedule" 
+	    item-width="48%"
+	    item-height="350px">
+	  
+	  <ion-checkbox ng-model="filter.blue"></ion-checkbox>
+	    <tv-show 
+	      tvshow-data="tvshow" 
+	      list="ResultsVM.isListView">
+	    </tv-show>
+
+
+	   </ion-item>
+
+	   </ion-list>
+
+
+  </ion-content>
+
+
+</ion-view>

@@ -1,6 +1,7 @@
-angular.module('myWatchList.controller', [])
+angular.module('myWatchList.controller', [
+  ])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $state) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -39,6 +40,7 @@ angular.module('myWatchList.controller', [])
       $scope.closeLogin();
     }, 1000);
   };
+
 })
 
 .controller('PlaylistsCtrl', function($scope) {

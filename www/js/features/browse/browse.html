@@ -1,16 +1,24 @@
 <ion-view view-title="Browse">
   <ion-content>
-    <h1>Browse</h1>
 
   <ion-list>
 
-  <ion-item 
+  <label class="checkbox">
+   <input type="checkbox">
+</label>
 
+<label class="checkbox">
+   <input type="checkbox">
+</label>
+
+
+  <ion-item 
+    
     collection-repeat="tvshow in BrowseVM.schedule" 
-    item-width="50%"
+    item-width="48%"
     item-height="350px">
   
-  <ion-checkbox ng-model="filter.blue">Favorite</ion-checkbox>
+  <ion-checkbox ng-model="filter.blue"></ion-checkbox>
     <tv-show 
       tvshow-data="tvshow" 
       list="BrowseVM.isListView">
@@ -25,25 +33,8 @@
 
 
 
-
-
-
-
-
-
-
   </ion-content>
 
-<!--lower tabs -->
-  <div class="tabs tabs-icon-top">
-  <a class="tab-item">
-    <i class="icon ion-home" ng-click="browse()"></i>
-    Home
-  </a>
-  <a class="tab-item">
-    <i class="icon ion-star"></i>
-    Favorites
-  </a>
-</div>
+
 
 </ion-view>

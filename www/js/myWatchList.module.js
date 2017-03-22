@@ -8,8 +8,17 @@ angular
   .module('myWatchList', [
     'ionic', 
     'myWatchList.controller',
-    'myWatchList.browse'
+    'myWatchList.browse',
+    'myWatchList.search',
+    'myWatchList.genre',
+    'myWatchList.genres',
+    'myWatchList.results',
+    'myWatchList.favorites',
+    'myWatchList.splash'
+
     ])
+
+
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -27,6 +36,9 @@ angular
   });
 })
 
+
+
+
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
@@ -37,14 +49,14 @@ angular
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
-    views: {
-      'menuContent': {
-        templateUrl: 'js/features/search/search.html'
-      }
-    }
-  })
+  // .state('app.search', {
+  //   url: '/search',
+  //   views: {
+  //     'menuContent': {
+  //       templateUrl: 'js/features/search/search.html'
+  //     }
+  //   }
+  // })
 
   // .state('app.browse', {
   //     url: '/browse',
@@ -54,25 +66,25 @@ angular
   //       }
   //     }
   //   })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'js/features/genres/genres.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
+    // .state('app.playlists', {
+    //   url: '/playlists',
+    //   views: {
+    //     'menuContent': {
+    //       templateUrl: 'js/features/genres/genres.html',
+    //       controller: 'PlaylistsCtrl'
+    //     }
+    //   }
+    // })
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'js/features/genre/genre.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
-  });
+  // .state('app.single', {
+  //   url: '/playlists/:playlistId',
+  //   views: {
+  //     'menuContent': {
+  //       templateUrl: 'js/features/genre/genre.html',
+  //       controller: 'PlaylistCtrl'
+  //     }
+  //   }
+  // });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/browse');
+  $urlRouterProvider.otherwise('/app/splash');
 });

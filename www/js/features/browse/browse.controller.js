@@ -2,7 +2,7 @@ angular
 	.module('myWatchList.browse')
 	.controller('BrowseCtrl', BrowseCtrl);
 
-function BrowseCtrl(api, $q) {
+function BrowseCtrl(api, $q, $state) {
 	var vm = this;
 
     var schedule = [];
@@ -10,18 +10,25 @@ function BrowseCtrl(api, $q) {
     vm.isListView = false;
 
     var promises = [
-        api.show(0),
-        api.show(1)
+        api.show('tt2712740'),
+        api.show('tt3107288'),
+        api.show('tt4145384'),
+        api.show('tt5511582')
+
 
     ];
 
-    $q.all(promises).then(function(shows){
-        vm.schedule = shows;
-        console.log(shows);
+    $q.all(promises).then(function(imDB){
+        vm.schedule = imDB;
+        console.log(imDB);
     });
+{
 
+    $state.go('app.browse');
 
-	}
+    }
+
+}
 
 
 
