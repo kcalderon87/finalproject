@@ -1,0 +1,28 @@
+<ion-view>
+
+<ion-content>
+
+<div class="row">
+
+  <div class="col col-50" ng-class="{listView: TvShowFavoritesVM.list}">
+  	<img ng-src="{{TvShowFavoritesVM.tvshowfavoritesData.imDBProfilePicture}}" item-height="30" item-width="30">
+  	<br>
+	<h2>{{TvShowFavoritesVM.tvshowfavoritesData.imDBShow}}</h2>
+	<h4>{{TvShowFavoritesVM.tvshowfavoritesData.imDBDays}}</h4>
+	<h4>{{TvShowFavoritesVM.tvshowfavoritesData.imDBTime}}</h4>
+
+  </div>
+  
+</div>
+
+</ion-content>
+
+</ion-view>
+
+<!--
+	<h2>{{TvShowVM.tvshowData.episodeName}}</h2>
+	<h4>Season: {{TvShowVM.tvshowData.season}} Episode: {{TvShowVM.tvshowData.episodeNumber}}</h4>
+	<h4>Air Date: {{TvShowVM.tvshowData.airDate}}</h4>
+	<h4>Air Time: {{TvShowVM.tvshowData.airTime}}</h4>
+	-->
+

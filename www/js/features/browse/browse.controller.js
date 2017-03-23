@@ -13,7 +13,11 @@ function BrowseCtrl(api, $q, $state) {
         api.show('tt2712740'),
         api.show('tt3107288'),
         api.show('tt4145384'),
-        api.show('tt5511582')
+        api.show('tt2930604'),
+        api.show('tt5511582'),
+        api.show('tt0096697'),
+        api.show('tt0436992'),
+        api.show('tt1520211')
 
 
     ];

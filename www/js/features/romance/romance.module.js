@@ -1,5 +1,5 @@
 angular
-	.module('myWatchList.genre', [
+	.module('myWatchList.romance', [
 		'myWatchList.component.api',
 		'myWatchList.component.tvShow'
 

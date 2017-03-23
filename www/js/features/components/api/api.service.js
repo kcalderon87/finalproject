@@ -25,7 +25,10 @@ function ApiService($http) {
 
                         imDB: resp.data.externals.imdb,
                         imDBShow: resp.data.name,
+                        imDBTime: resp.data.schedule.time,
+                        imDBDays: resp.data.schedule.days,
                         imDBProfilePicture: decodeURIComponent(resp.data.image.medium)
+
 
 
         	};

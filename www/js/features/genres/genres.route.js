@@ -1,9 +1,9 @@
 angular
 	.module('myWatchList.genres')
-	.config(searchConfig);
+	.config(genresConfig);
 
-function searchConfig($stateProvider) {
-	$stateProvider.state('app.playlists', {
+function genresConfig($stateProvider) {
+	$stateProvider.state('app.genres', {
 		name: 'genres',
 		url: '/playlists',
 		views: {

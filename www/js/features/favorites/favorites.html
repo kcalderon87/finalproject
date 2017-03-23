@@ -7,13 +7,12 @@
 	    
 	    collection-repeat="tvshow in FavoritesVM.schedule" 
 	    item-width="48%"
-	    item-height="350px">
-	  
-	  <ion-checkbox ng-model="filter.blue"></ion-checkbox>
-	    <tv-show 
-	      tvshow-data="tvshow" 
+	    item-height="385px">
+	
+	    <tv-show-favorites
+	      tvshowfavorites-data="tvshow" 
 	      list="FavoritesVM.isListView">
-	    </tv-show>
+	    </tv-show-favorites>
 
 
 	   </ion-item>

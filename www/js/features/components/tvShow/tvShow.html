@@ -5,9 +5,15 @@
 <div class="row">
 
   <div class="col col-50" ng-class="{listView: TvShowVM.list}">
-  	<img ng-src="{{TvShowVM.tvshowData.imDBProfilePicture}}" item-height="50" item-width="50">
+
+  	<img ng-src="{{TvShowVM.tvshowData.imDBProfilePicture}}">
   	<br>
-	<h2>{{TvShowVM.tvshowData.imDBShow}}</h2>
+
+  	<div>
+	  	<label class="checkbox" id="checkbox">
+	  		<input type="checkbox"><h3 id="showname">{{TvShowVM.tvshowData.imDBShow}}</h3>
+		</label>
+	</div>
 
   </div>
   
