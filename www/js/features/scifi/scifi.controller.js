@@ -19,18 +19,11 @@ function ScifiCtrl(api, $q, $state) {
         api.show('tt0460681'),
         api.show('tt2364582')
 
-
-
     ];
 
     $q.all(promises).then(function(imDB){
         vm.schedule = imDB;
         console.log(imDB);
     });
-{
-
-    $state.go('app.browse');
-
-    }
 
 }

@@ -26,10 +26,5 @@ function AnimationCtrl(api, $q, $state) {
         vm.schedule = imDB;
         console.log(imDB);
     });
-{
-
-    $state.go('app.browse');
-
-    }
 
 }

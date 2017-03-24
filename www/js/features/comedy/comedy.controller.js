@@ -25,10 +25,5 @@ function ComedyCtrl(api, $q, $state) {
         vm.schedule = imDB;
         console.log(imDB);
     });
-{
-
-    $state.go('app.browse');
-
-    }
 
 }
